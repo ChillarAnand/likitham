@@ -26,7 +26,7 @@ options = {
     'vbuffer': 0,
     'noise': 0.05,
     'hbuffer': 5,
-    'nchars_per_sample': 30,
+    'nchars_per_sample': 1,
     'height': 45
 }
 alphabet_size = len(telugu.symbols)
@@ -37,8 +37,8 @@ if len(sys.argv) > 1:
     target_dir = sys.argv[1]
     samples = int(sys.argv[2])
 else:
-    samples = 1000
-    target_dir = '../data/train/3/'
+    samples = 100
+    target_dir = 'data'
 
 print(samples, target_dir)
 
