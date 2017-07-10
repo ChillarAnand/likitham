@@ -1,5 +1,6 @@
 """
-Generates training data using chamanti OCR
+Generates training data using chamanti OCR that can be used
+to train ocropy model
 """
 
 import os

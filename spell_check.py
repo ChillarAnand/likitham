@@ -1,7 +1,7 @@
 import pickle
 
 
-diacritic_signs = 'ాిీుూృౄెేైొోౌఁంః '
+diacritic_signs = 'ాిీుూృౄెేైొోౌఁంః'
 virama = '్'
 vowels = 'అఆఇఈఉఊఋఌఎఏఐఒఓఔ'
 consonants = 'కఖగఘఙచఛజఝఞటఠడఢణతథదధనపఫబభమయరఱలళవశషసహ'
@@ -36,7 +36,8 @@ def probability(word):
     return words_counter[word] / N
 
 
-with open('wrong_words.txt') as fh:
+# with open('wrong_words.txt') as fh:
+with open('wrong.txt') as fh:
     wrong_words = [i.strip() for i in fh.readlines()]
 
 
@@ -107,4 +108,5 @@ def correction(word):
 
 
 for word in wrong_words:
+    print(syllables(word))
     print(word, correction(word), suggestions(word))
