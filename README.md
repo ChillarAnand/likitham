@@ -1,20 +1,24 @@
 # Likitham
 
-
-This repo contains resources related to processing Telugu language data.
-
-
-## Files
-
-generate_training_data.py - Generates training data using chamanti OCR
-
-te.pyrnn.gz - Telugu Model trained with [ocropy](https://github.com/tmbdev/ocropy)
-
-training_samples.zip - Few samples of training data
+This repo contains scripts and datasets for processing Telugu language data.
 
 
+## Scripts
 
-## Resources you might like
+Checkout module docstrings of individual scripts on how to use them.
+
+
+## Models
+
+te.pyrnn.gz - Telugu language model(LSTM + CTC) trained with [ocropy](https://github.com/tmbdev/ocropy)
+
+## Dataset
+
+Sample training data. You can use scripts to generate customized training data.
+
+
+
+## Useful links
 
 [Telugu fonts]()
 
